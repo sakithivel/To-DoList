@@ -1,0 +1,80 @@
+
+
+
+
+
+p,h3{
+  margin: 10px;
+}
+.box{
+  border: 1px solid rgb(11, 11, 11);
+  /* margin: 100px; */
+  border-radius: 13px;
+  height: 150px;
+  width: 450px;
+  margin:-70px 70px;
+  background-color: rgb(6, 6, 6);
+  position: absolute;
+  text-align: center;
+  
+} 
+.top{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 13, 13);
+  text-align: center;
+}
+button{
+  height: 35px;
+  width: 92%;
+  color: rgb(249, 249, 249);
+  background-color: #0439aa;
+  border-radius: 12px;
+  border:1px solid white;
+  margin:0px 15px 15px 15px;
+  font-size: 18px;
+}
+.Modal{
+height: 55px;
+  width: 95%;
+  color: rgb(20, 19, 19);
+  background-color: #f6f7f8;
+  border-radius: 12px;
+  /* border:px solid rgb(205, 12, 12); */
+  margin:0px 15px 15px 15px;
+  font-size: 18px;
+}
+.xbox{
+    width: 400px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: rgb(71, 214, 73);
+    text-align: center;
+
+    justify-content: center;
+
+}
+
+.imgs{
+   
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    border-radius: 40px;
+   
+}
+
+.xButton{
+    width: 50px;
+    margin-top:1px; 
+    margin-bottom: 10px;
+    background-color: rgb(238, 238, 238);
+    color: #000000;
+    margin-left: 340px;
+}
+.premium{
+      height: 50px;
+}

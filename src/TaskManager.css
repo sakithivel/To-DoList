@@ -1,0 +1,218 @@
+/* Styling Architecture & Transitions */
+.app-wrapper {
+  min-height: 100vh;
+  padding: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Light Theme Variables */
+.light-theme {
+  background-color: #f4f6f9;
+  color: #2b2d42;
+}
+.light-theme .form-card, 
+.light-theme .metrics-card, 
+.light-theme .task-card, 
+.light-theme .modal-box {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.light-theme .accordion-title {
+  background-color: #e9ecef;
+}
+
+/* Dark Theme Variables */
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark-theme .form-card, 
+.dark-theme .metrics-card, 
+.dark-theme .task-card, 
+.dark-theme .modal-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+}
+.dark-theme input {
+  background-color: #2b2b2b;
+  border-color: #444444;
+  color: #ffffff;
+}
+.dark-theme .accordion-title {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* Header UI */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+/* Core Form Layouts */
+.app-section {
+  margin-bottom: 30px;
+}
+.dashboard-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.form-card, .metrics-card {
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 280px;
+}
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.task-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+/* Metrics Displays */
+.counter-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: #007bff;
+  margin: 10px 0 0 0;
+}
+
+/* Accordion Engine */
+.accordion {
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 600px;
+}
+.accordion-title {
+  padding: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-content {
+  padding: 15px;
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Task Cards & Registry grid Layout */
+.list-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.task-card {
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border 0.2s ease;
+}
+.completed-border {
+  border-left: 5px solid #28a745 !important;
+}
+.task-info h4 {
+  margin: 0 0 6px 0;
+}
+.badge {
+  background-color: #6c757d;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Global Button Archetypes */
+.btn {
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+}
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+/* Modal Engine Overlay */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+.modal-box {
+  padding: 25px;
+  border-radius: 8px;
+  width: 340px;
+  text-align: center;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.empty-notice {
+  font-style: italic;
+  opacity: 0.7;
+}

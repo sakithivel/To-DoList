@@ -1,0 +1,73 @@
+.forget{
+    font-size: 20px;
+    color: rgb(76, 235, 8);
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.forget:hover{
+     color: #240cdb;
+     text-decoration:underline;
+     cursor:crosshair;
+     font-size: 50px;   
+}
+body{
+    background-color: rgb(17, 209, 135);
+    margin: 10% 10% 10% 10%;
+    background-size: cover ;
+   
+}
+button{
+    
+    border: 2px solid rgb(28, 237, 5);
+    background-color:rgb(6, 230, 6);
+    border-radius: 0.5%;
+    font-size: larger;
+    
+}
+.card{
+    border: 5px solid rgb(184, 184, 198);
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+h1{
+    color: #0698f4;
+    font-family:'Times New Roman', Times, serif
+
+}
+.control{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5%;
+}
+.input{
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #f6f5fb;
+
+}
+
+
+.mess{
+    text-align: center;
+    color: #0698f4;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif
+
+}
+.node{
+    color: #0698f4 ;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.str{
+    color: #0698f4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.page{
+    border-radius: 30px;
+}

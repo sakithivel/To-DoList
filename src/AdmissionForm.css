@@ -1,0 +1,121 @@
+
+.AdmissionBackgrount{
+
+     background-image: url('./asset/imageMEC.jpg');
+
+}
+
+.admission-container {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+}
+
+.admission-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.admission-card h2 {
+    color: #1a365d;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.success-banner {
+    background-color: #e2e8f0;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    color: #4a5568;
+    margin-bottom: 6px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #333;
+    outline: none;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1a365d;
+}
+
+.submit-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.apply-btn {
+    background-color: #06f20a;
+    color: white;
+    border: none;
+    padding: 10px 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+.apply-btn:hover {
+    background-color: #79c700;
+}
+
+@media (max-width: 500px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+}

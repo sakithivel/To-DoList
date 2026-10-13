@@ -1,0 +1,86 @@
+/* Full viewport centering container with the pastel pink-to-blue gradient */
+.hero-gradient-wrapper {
+    background: linear-gradient(135deg, #fceeff 0%, #e8edff 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Central alignment content wrapper block */
+.hero-content-box {
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The magenta/pink primary heading */
+.hero-title {
+    color: #d12e2e;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    letter-spacing: -0.5px;
+}
+
+/* Offset positioning tuning for the graphical emblem */
+.shopping-icon-span {
+    font-size: 2.3rem;
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+/* Charcoal gray descriptive text label */
+.hero-subtitle {
+    color: #3f444d;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Rounded berry-colored submission interactive block button */
+.start-shopping-btn {
+    background-color: #4cd12e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(209, 46, 109, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover feedback transitions */
+.start-shopping-btn:hover {
+    background-color: #6eb823;
+}
+
+.start-shopping-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive optimization scale down rule for handheld devices */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.85rem;
+        flex-wrap: wrap;
+    }
+    .shopping-icon-span {
+        font-size: 1.85rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
